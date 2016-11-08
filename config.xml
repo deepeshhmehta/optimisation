@@ -39,7 +39,7 @@
 
     <!-- <plugin name="org.crosswalk.engine" spec="1.3.0" source="pgb" /> -->
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" /> -->
-    <gap:plugin name="react-native-webview-crosswalk" source="npm" />
+    <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />
 
     <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
     <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
