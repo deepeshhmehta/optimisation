@@ -51,8 +51,8 @@
     <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <gap:plugin name="org.apache.cordova.statusbar" source="npm" />
 
-    <plugin name="com.onesignal.plugins.onesignal" spec="1.9.0" source="pgb" />
-    <!-- <gap:plugin name="onesignal-cordova-plugin-jbs" source="npm" /> -->
+    <!-- <plugin name="com.onesignal.plugins.onesignal" spec="1.9.0" source="pgb" /> -->
+    <gap:plugin name="onesignal-cordova-plugin-jbs" source="npm" />
     
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
     <!-- <gap:plugin name="de.appplant.cordova.plugin.hidden-statusbar-overlay"  version="1.2.0" /> -->
