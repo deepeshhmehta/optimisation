@@ -31,8 +31,8 @@
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="UIWebViewBounce" value="false" />
-    <preference name="android-build-tool" value="gradle" />
-    <preference name="xwalkMultipleApk" value="false"/>
+<!--     <preference name="android-build-tool" value="gradle" /> -->
+    <!--<preference name="xwalkMultipleApk" value="false"/>-->
     
     <plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" />
     
