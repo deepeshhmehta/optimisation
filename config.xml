@@ -18,7 +18,7 @@
 	
 	
 	<platform name="android">
-	<preference name="android-minSdkVersion" value="16+" />
+	<!-- <preference name="android-minSdkVersion" value="16+" /> -->
     <!-- <preference name="android-targetSdkVersion" value="16"/> -->
     <splash src="splash/splash.png" />
 	<splash src="splash/drawable-port-ldpi-screen.png" platform="android" qualifier="ldpi" />
@@ -40,8 +40,8 @@
     <!-- <preference name="xwalkMultipleApk" value="false"/> -->
     
     <!-- <plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> -->
-<!-- <plugin name="phonegap-plugin-opentok" spec="https://github.com/songz/phonegap-plugin-opentok.git" source="git" /> -->
-    <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" />
+<plugin name="phonegap-plugin-opentok" spec="https://github.com/songz/phonegap-plugin-opentok.git" source="git" />
+    <!-- <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" /> -->
     
 
     <gap:plugin name="de.appplant.cordova.plugin.printer" source="npm"/>
