@@ -17,8 +17,9 @@
     <icon src="icon.png" />
     
     
-    
     <platform name="android">
+    <preference name="android-minSdkVersion" value="16+" />
+    <preference name="android-targetSdkVersion" value="16"/>
     <splash src="splash/splash.png" />
     <splash src="splash/drawable-port-ldpi-screen.png" platform="android" qualifier="ldpi" />
     <splash src="splash/drawable-port-mdpi-screen.png" platform="android" qualifier="mdpi" />
@@ -26,11 +27,7 @@
     <splash src="splash/drawable-port-xhdpi-screen.png" platform="android" qualifier="xhdpi" />
 <!--    <splash src="splash/fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" /> -->
     <splash src="splash/drawable-port-xxhdpi-screen.png" platform="android" qualifier="port-xxhdpi" />
-    </platform>
-    
-    <preference name="android-build-tool" value="gradle|ant" />
-    <preference name="android-minSdkVersion" value="16+" />
-    <preference name="android-targetSdkVersion" value="16"/>
+  </platform>
     
     <preference name="phonegap-version" value="cli-5.2.0" />
     <preference name="webviewbounce" value="false" />
@@ -38,11 +35,12 @@
     <preference name="UIWebViewBounce" value="false" />
     
     
-    <!-- <preference name="android-targetSdkVersion" value="16"/> -->
+    <!-- <preference name="android-targetSdkVersion" value="16"/>
+    <preference name="android-build-tool" value="gradle" /> -->
     <!-- <preference name="xwalkMultipleApk" value="false"/> -->
     
     <!--<plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> -->
-    <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" />
+    <plugin name="cordova-plugin-opentok" spec="https://github.com/guzzio/cordova-plugin-opentok.git" source="git" />
     
 
     <gap:plugin name="de.appplant.cordova.plugin.printer" source="npm"/>
