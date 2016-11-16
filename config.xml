@@ -4,32 +4,32 @@
     <name>Optimisation</name>
     <preference name="orientation" value="default" />
     <preference name="fullscreen" value="false" />
-	<preference name="SplashScreen" value="splash" />
-	<preference name="SplashScreenDelay" value="10000"/>
-	
+    <preference name="SplashScreen" value="splash" />
+    <preference name="SplashScreenDelay" value="10000"/>
+    
     <gap:platform name="ios" />
     <gap:platform name="android" />
     <description>
       Optimisation
-    </description> 
+    </description>
     <author href="http://www.arth.tech" email="support@arth.tech">
     </author>
     <icon src="icon.png" />
-	
-	
-	<platform name="android">
-	<preference name="android-minSdkVersion" value="14" />
-    <preference name="android-targetSdkVersion" value="19" />
+    
+    
+    <platform name="android">
+    <preference name="android-minSdkVersion" value="16+" />
+    <preference name="android-targetSdkVersion" value="16"/>
     <splash src="splash/splash.png" />
-	<splash src="splash/drawable-port-ldpi-screen.png" platform="android" qualifier="ldpi" />
-	<splash src="splash/drawable-port-mdpi-screen.png" platform="android" qualifier="mdpi" />
-	<splash src="splash/drawable-port-hdpi-screen.png" platform="android" qualifier="hdpi" />
-	<splash src="splash/drawable-port-xhdpi-screen.png" platform="android" qualifier="xhdpi" />
-<!-- 	<splash src="splash/fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" /> -->
-	<splash src="splash/drawable-port-xxhdpi-screen.png" platform="android" qualifier="port-xxhdpi" />
+    <splash src="splash/drawable-port-ldpi-screen.png" platform="android" qualifier="ldpi" />
+    <splash src="splash/drawable-port-mdpi-screen.png" platform="android" qualifier="mdpi" />
+    <splash src="splash/drawable-port-hdpi-screen.png" platform="android" qualifier="hdpi" />
+    <splash src="splash/drawable-port-xhdpi-screen.png" platform="android" qualifier="xhdpi" />
+<!--    <splash src="splash/fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" /> -->
+    <splash src="splash/drawable-port-xxhdpi-screen.png" platform="android" qualifier="port-xxhdpi" />
   </platform>
-	
-    <preference name="phonegap-version" value="cli-6.3.0" />
+    
+    <preference name="phonegap-version" value="cli-5.2.0" />
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="UIWebViewBounce" value="false" />
@@ -39,9 +39,8 @@
     <preference name="android-build-tool" value="gradle" /> -->
     <!-- <preference name="xwalkMultipleApk" value="false"/> -->
     
-    <plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" />
-<!-- <plugin name="phonegap-plugin-opentok" spec="https://github.com/songz/phonegap-plugin-opentok.git" source="git" /> -->
-    <!-- <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" /> -->
+    <!--<plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> -->
+    <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" />
     
 
     <gap:plugin name="de.appplant.cordova.plugin.printer" source="npm"/>
@@ -51,10 +50,8 @@
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" /> -->
     <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
     <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />
-
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" /> -->
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-patched" source="npm" /> -->
-
     <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
     <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
     <gap:plugin name="org.apache.cordova.file" source="npm" />
@@ -64,23 +61,20 @@
     <gap:plugin name="cordova-plugin-whitelist" source="npm" />
     <gap:plugin name="cordova-plugin-x-toast" source="npm" />
     <gap:plugin name="org.apache.cordova.statusbar" source="npm" />
-
     <!-- <plugin name="com.onesignal.plugins.onesignal" spec="1.9.0" source="pgb" /> -->
-<gap:plugin name="onesignal-cordova-plugin@1.9.0" source="npm" />
-    
+    <gap:plugin name="onesignal-cordova-plugin@1.9.0" source="npm" />
     <gap:plugin name="cordova-plugin-network-information" source="npm" />
-   
     <gap:plugin name="cordova-plugin-statusbar" source="npm" />
-    
+
     <access origin="*"/> <!-- allow all pages, use for development -->
     <allow-navigation href="*" />
-    
+
     <!-- <preference name="xwalkVersion" value="19+" /> -->
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="loadUrlTimeoutValue" value="700000" />
-    
 
-    
-    
+
+
+
 
 </widget>
