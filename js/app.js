@@ -1,5 +1,6 @@
 // Ionic Starter App
 var domain = "https://hope.arth.tech/";
+var apkInterfaceId =99;
 //var domain = "http://test.doctrs.in/";
 //var domain = "http://192.168.2.169/doctors/";
 angular.module('underscore', [])
@@ -68,7 +69,7 @@ angular.module('your_app_name', [
 
 
                 var notificationOpenedCallback = function (jsonData) {
-                    // alert('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
+                    
                     console.log('didReceiveRemoteNotificationCallBack: ' + JSON.stringify(jsonData));
 
                     // $state.go("app.content-library-setting");
@@ -77,13 +78,7 @@ angular.module('your_app_name', [
                         if (jsonData.additionalData) {
                             //  alert("Inside additionalData");
                             console.log("additionalData " + jsonData.additionalData);
-                            // console.log("additionalData "+jsonData.additionalData.push)
-                            //  alert("id " + jsonData.additionalData.actionSelected);
-//                            if (jsonData.additionalData.yourUrlKey) {
-//                                alert("Inside additionalData yourUrlKey");
-//                                location.href = jsonData.additionalData.yourUrlKey;
-//                            }
-                            //  alert()
+                            
                             $http({
                                 method: 'GET',
                                 url: domain + 'trigger/action-trigger',
@@ -105,58 +100,6 @@ angular.module('your_app_name', [
                             });
 
 
-                            /* if (jsonData.additionalData.actionSelected == "id1")
-                             {
-                             
-                             //  alert("Button id1 pressed!");
-                             $http({
-                             method: 'GET',
-                             url: domain + 'tracker/captured',
-                             params: {actionid: jsonData.additionalData.actionButtons[0].icon, status: 1}
-                             }).then(function successCallback(response) {
-                             
-                             if (jsonData.additionalData.yourUrlKey) {
-                             location.href = jsonData.additionalData.yourUrlKey;
-                             }
-                             
-                             }, function errorCallback(e) {
-                             console.log(e);
-                             });
-                             }
-                             if (jsonData.additionalData.actionSelected == "id2")
-                             {
-                             //  alert("Button id2 pressed!");
-                             
-                             $http({
-                             method: 'GET',
-                             url: domain + 'tracker/captured',
-                             params: {actionid: jsonData.additionalData.actionButtons[1].icon, status: 2}
-                             }).then(function successCallback(response) {
-                             
-                             if (jsonData.additionalData.yourUrlKey) {
-                             location.href = jsonData.additionalData.yourUrlKey;
-                             }
-                             }, function errorCallback(e) {
-                             console.log(e);
-                             });
-                             }
-                             if (jsonData.additionalData.actionSelected == "id3")
-                             {
-                             //   alert("Button id3 pressed!");
-                             
-                             $http({
-                             method: 'GET',
-                             url: domain + 'tracker/captured',
-                             params: {actionid: jsonData.additionalData.actionButtons[2].icon, status: 3}
-                             }).then(function successCallback(response) {
-                             if (jsonData.additionalData.yourUrlKey) {
-                             location.href = jsonData.additionalData.yourUrlKey;
-                             }
-                             }, function errorCallback(e) {
-                             console.log(e);
-                             });
-                             }
-                             */
                         }
 
                     } catch (err)
@@ -166,7 +109,24 @@ angular.module('your_app_name', [
 
 
                 };
-
+                
+                // try{
+                //     console.log('worked555');
+                //         window.plugins.OneSignal
+                //           .startInit("eaa13ee8-5f59-4fe7-a532-aa47d00cbba0", "769295732267")
+                //           .handleNotificationReceived(function(jsonData) {
+                //             alert("Notification received:\n" + JSON.stringify(jsonData));
+                //             console.log('Did I receive a notification: ' + JSON.stringify(jsonData));
+                //           })
+                //           .handleNotificationOpened(function(jsonData) {
+                //             alert("Notification opened:\n" + JSON.stringify(jsonData));
+                //             console.log('didOpenRemoteNotificationCallBack: ' + JSON.stringify(jsonData));   
+                //           })
+                //           .endInit();
+                //            console.log('worked');
+                //   }catch(err){
+                //     console.log("init "+err);
+                //   }
                 window.plugins.OneSignal.init("eaa13ee8-5f59-4fe7-a532-aa47d00cbba0",
                         {googleProjectNumber: "769295732267"}, // jainam account GCM id
                         notificationOpenedCallback);
