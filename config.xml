@@ -40,8 +40,8 @@
     <!-- <preference name="xwalkMultipleApk" value="false"/> -->
     
     <!-- <plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> -->
-<plugin name="phonegap-plugin-opentok" spec="https://github.com/songz/phonegap-plugin-opentok.git" source="git" />
-    <!-- <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" /> -->
+<!-- <plugin name="phonegap-plugin-opentok" spec="https://github.com/songz/phonegap-plugin-opentok.git" source="git" /> -->
+    <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" />
     
 
     <gap:plugin name="de.appplant.cordova.plugin.printer" source="npm"/>
@@ -75,7 +75,7 @@
     <access origin="*"/> <!-- allow all pages, use for development -->
     <allow-navigation href="*" />
     
-    <preference name="xwalkVersion" value="19+" />
+    <!-- <preference name="xwalkVersion" value="19+" /> -->
     <preference name="StatusBarOverlaysWebView" value="true" />
     <preference name="loadUrlTimeoutValue" value="700000" />
     
