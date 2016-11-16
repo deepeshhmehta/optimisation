@@ -32,6 +32,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="UIWebViewBounce" value="false" />
     <preference name="android-build-tool" value="gradle" />
+    <preference name="xwalkMultipleApk" value="false"/>
     
     <plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" />
     
@@ -41,7 +42,7 @@
 
 
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" /> -->
-    <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
+    <!--<plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />-->
     <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" /> -->
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-patched" source="npm" /> -->
