@@ -33,7 +33,7 @@
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="UIWebViewBounce" value="false" />
-    <preference name="xwalkVersion" value="18+" />
+    <preference name="xwalkVersion" value="19+" />
     
     <!-- <preference name="android-targetSdkVersion" value="16"/>
     <preference name="android-build-tool" value="gradle" /> -->
@@ -49,9 +49,9 @@
 
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" /> -->
     <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
-    <!-- <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" /> -->
+    <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" /> -->
-    <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-patched" source="npm" />
+    <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-patched" source="npm" /> -->
 
     <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
     <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
