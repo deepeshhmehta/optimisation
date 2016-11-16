@@ -18,8 +18,8 @@
     
     
     <platform name="android">
-    <preference name="android-minSdkVersion" value="16+" />
-    <preference name="android-targetSdkVersion" value="16"/>
+    <!--<preference name="android-minSdkVersion" value="16+" />
+    <preference name="android-targetSdkVersion" value="16"/> -->
     <splash src="splash/splash.png" />
     <splash src="splash/drawable-port-ldpi-screen.png" platform="android" qualifier="ldpi" />
     <splash src="splash/drawable-port-mdpi-screen.png" platform="android" qualifier="mdpi" />
@@ -29,18 +29,18 @@
     <splash src="splash/drawable-port-xxhdpi-screen.png" platform="android" qualifier="port-xxhdpi" />
   </platform>
     
-    <preference name="phonegap-version" value="cli-5.2.0" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="webviewbounce" value="false" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="UIWebViewBounce" value="false" />
     
     
-    <!-- <preference name="android-targetSdkVersion" value="16"/> -->
+    <!-- <preference name="android-targetSdkVersion" value="16"/>    -->
     <preference name="android-build-tool" value="gradle" />
     <!-- <preference name="xwalkMultipleApk" value="false"/> -->
     
     <!--<plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> -->
-    <plugin name="cordova-plugin-opentok" spec="https://github.com/guzzio/cordova-plugin-opentok.git" source="git" />
+    <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" />
     
 
     <gap:plugin name="de.appplant.cordova.plugin.printer" source="npm"/>
@@ -49,7 +49,7 @@
 
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" /> -->
     <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
-    <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />
+    <!--<gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />     -->
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" /> -->
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-patched" source="npm" /> -->
     <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
