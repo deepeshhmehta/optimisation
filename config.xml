@@ -42,6 +42,7 @@
     <!-- <plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> -->
     <plugin name="cordova-plugin-opentokjs" source="npm" />
     <preference name="OpentokClientVersion" value="v2"/>
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <!-- <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" />ś -->
     
 
