@@ -16,9 +16,7 @@
     </author>
     <icon src="icon.png" />
     
-    <preference name="android-build-tool" value="ant|gradle" />
-    <preference name="android-minSdkVersion" value="16+" />
-    <preference name="android-targetSdkVersion" value="16"/>
+    
     
     <platform name="android">
     <splash src="splash/splash.png" />
@@ -28,7 +26,11 @@
     <splash src="splash/drawable-port-xhdpi-screen.png" platform="android" qualifier="xhdpi" />
 <!--    <splash src="splash/fr-xhdpi.png" platform="android" qualifier="fr-xhdpi" /> -->
     <splash src="splash/drawable-port-xxhdpi-screen.png" platform="android" qualifier="port-xxhdpi" />
-  </platform>
+    </platform>
+    
+    <preference name="android-build-tool" value="gradle|ant" />
+    <preference name="android-minSdkVersion" value="16+" />
+    <preference name="android-targetSdkVersion" value="16"/>
     
     <preference name="phonegap-version" value="cli-5.2.0" />
     <preference name="webviewbounce" value="false" />
