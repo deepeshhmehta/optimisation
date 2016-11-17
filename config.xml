@@ -18,8 +18,8 @@
     
     
     <platform name="android">
-    <preference name="android-minSdkVersion" value="16+" />
-    <preference name="android-targetSdkVersion" value="16"/> 
+    <!-- <preference name="android-minSdkVersion" value="16+" />
+    <preference name="android-targetSdkVersion" value="16"/>  -->
     <splash src="splash/splash.png" />
     <splash src="splash/drawable-port-ldpi-screen.png" platform="android" qualifier="ldpi" />
     <splash src="splash/drawable-port-mdpi-screen.png" platform="android" qualifier="mdpi" />
@@ -36,36 +36,38 @@
     
     
     <!-- <preference name="android-targetSdkVersion" value="16"/>    -->
-    <preference name="android-build-tool" value="gradle" />
+    <!-- <preference name="android-build-tool" value="gradle" /> -->
     <!-- <preference name="xwalkMultipleApk" value="false"/> -->
     
-    <!--<plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> -->
-    <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" />
+    <plugin name="Cordova-Plugin-OpenTok-JBS" version="1.0.0" source="npm" /> 
+    <!-- <plugin name="cordova-plugin-opentok" spec="https://github.com/IjzerenHein/cordova-plugin-opentok.git" source="git" /> -->
     
 
-    <!-- <gap:plugin name="de.appplant.cordova.plugin.printer" source="npm"/> -->
+    <gap:plugin name="de.appplant.cordova.plugin.printer" source="npm"/>
 
 
 
-    <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" /> -->
-    <!-- <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" /> -->
+    <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-adapt" source="npm" />
+    <plugin name="cordova-build-architecture" spec="https://github.com/MBuchalik/cordova-build-architecture.git#v1.0.1" source="git" />
     <!-- <gap:plugin name="cordova-plugin-crosswalk-jb" source="npm" />      -->
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview" source="npm" /> -->
     <!-- <gap:plugin name="cordova-plugin-crosswalk-webview-pgb-patched" source="npm" /> -->
     
-    <!-- <gap:plugin name="org.apache.cordova.splashscreen" source="npm" /> -->
-    <!-- <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
+    <gap:plugin name="org.apache.cordova.splashscreen" source="npm" />
+    <gap:plugin name="org.apache.cordova.inappbrowser" source="npm" />
     <gap:plugin name="org.apache.cordova.file" source="npm" />
     <gap:plugin name="org.apache.cordova.file-transfer" source="npm" />
-    <gap:plugin name="org.apache.cordova.camera" source="npm" /> -->
-    <!-- <gap:plugin name="org.apache.cordova.device" source="npm" /> -->
-    <!-- <gap:plugin name="cordova-plugin-whitelist" source="npm" /> -->
-    <!-- <gap:plugin name="cordova-plugin-x-toast" source="npm" /> -->
-    <!-- <gap:plugin name="org.apache.cordova.statusbar" source="npm" /> -->
+    <gap:plugin name="org.apache.cordova.camera" source="npm" />
+    <gap:plugin name="org.apache.cordova.device" source="npm" />
+    <gap:plugin name="cordova-plugin-whitelist" source="npm" />
+    <gap:plugin name="cordova-plugin-x-toast" source="npm" />
+    <gap:plugin name="org.apache.cordova.statusbar" source="npm" />
+    
     <!-- <plugin name="com.onesignal.plugins.onesignal" spec="1.9.0" source="pgb" /> -->
-    <!-- <gap:plugin name="onesignal-cordova-plugin@1.9.0" source="npm" /> -->
-    <!-- <gap:plugin name="cordova-plugin-network-information" source="npm" /> -->
-    <!-- <gap:plugin name="cordova-plugin-statusbar" source="npm" /> -->
+    
+    <gap:plugin name="onesignal-cordova-plugin@1.9.0" source="npm" />
+    <gap:plugin name="cordova-plugin-network-information" source="npm" />
+    <gap:plugin name="cordova-plugin-statusbar" source="npm" />
 
     <access origin="*"/> <!-- allow all pages, use for development -->
     <allow-navigation href="*" />
