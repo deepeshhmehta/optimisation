@@ -7,11 +7,13 @@
     </ion-nav-title>
     <div class="row tabnav psrelative" ng-if="apkLanguage == 'english'">
         <div class="col"><a ui-sref="app.reminder" class="active" href="#">Upcoming</a></div>
-        <div class="col"><a ui-sref="app.reminder-recent" href="#">Past</a></div>
+        <div class="col"><a ui-sref="app.reminder-recent" href="#">Recent</a></div>
+        <div class="col"><a ui-sref="app.reminder-summary"  href="#">Summary</a></div>
     </div>
     <div class="row tabnav psrelative" ng-if="apkLanguage != 'english'">
         <div class="col"><a ui-sref="app.reminder" class="active" href="#">{{langtext.upcoming[language]}}</a></div>
         <div class="col"><a ui-sref="app.reminder-recent" href="#">{{langtext.recent[language]}}</a></div>
+        <div class="col"><a ui-sref="app.reminder-summary"  href="#">Summary</a></div>
     </div>
     <ion-content scroll="true" class="bgwhite">
 
@@ -31,7 +33,7 @@
         </div>
         <div class="citem item-divider" ng-if="reminder!=''" >{{curDate |dateFormat3}}</div>
         <td-cards ng-if="reminder==''">
-            <p style="text-align:center">No reminder's found</p>
+           <p style="text-align:center">No reminder's found</p>
         </td-cards>
 
         <td-cards ng-if="reminder!=''">
@@ -63,11 +65,7 @@
                     </div>
                 </div>
             </td-card>
-
-
-
-
-        </td-cards>
+       </td-cards>
 
 
     </ion-content>
